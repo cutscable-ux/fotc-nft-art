@@ -1,20 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a14"/>
-      <stop offset="100%" stop-color="#0d0a0a"/>
-    </linearGradient>
-    <filter id="g">
-      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#1565c0" flood-opacity="0.5"/>
-    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#140a00"/><stop offset="100%" stop-color="#0a0a0f"/></linearGradient>
+    <filter id="g"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#2196f3" flood-opacity="0.6"/></filter>
   </defs>
   <rect width="500" height="500" fill="url(#bg)" rx="20"/>
-  <rect x="20" y="20" width="460" height="460" fill="none" stroke="#2196f3" stroke-width="2" rx="15" opacity="0.5"/>
-  <circle cx="250" cy="200" r="80" fill="none" stroke="#2196f3" stroke-width="2" filter="url(#g)"/>
-  <text x="250" y="192" text-anchor="middle" font-family="monospace" font-size="14" fill="#2196f3" filter="url(#g)">ARTIFACT</text>
-  <text x="250" y="220" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Ancient Artifact</text>
-  <text x="250" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#2196f3" filter="url(#g)">RARE</text>
-  <text x="250" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">RARITY RARE</text>
-  <line x1="150" y1="370" x2="350" y2="370" stroke="#2196f3" stroke-width="1" opacity="0.3"/>
-  <text x="250" y="400" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">FALL OF THE CABAL</text>
+  <rect x="15" y="15" width="470" height="470" fill="none" stroke="#1565c0" stroke-width="1.5" rx="15" opacity="0.3"/>
+  <circle cx="250" cy="190" r="45" fill="none" stroke="#2196f3" stroke-width="1.5" opacity="0.4"/><polygon points="250,160 238,185 262,185" fill="#2196f3" opacity="0.25"/><polygon points="250,220 238,195 262,195" fill="#2196f3" opacity="0.2"/><circle cx="250" cy="190" r="5" fill="#2196f3" opacity="0.3"/>
+  <text x="250" y="340" text-anchor="middle" font-family="monospace" font-size="9" fill="#1565c0">ANCIENT ARTIFACT</text>
+  <text x="250" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#2196f3">RARE</text>
 </svg>

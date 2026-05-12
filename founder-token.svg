@@ -1,25 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a0a0a"/>
-      <stop offset="100%" stop-color="#0d0d1a"/>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2a0a0a"/>
+      <stop offset="60%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="30%" stop-color="#ffaa00"/>
+      <stop offset="60%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#ffd700"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff4444"/>
-      <stop offset="50%" stop-color="#ff8800"/>
-      <stop offset="100%" stop-color="#ff4444"/>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="40%" stop-color="#ff6600"/>
+      <stop offset="70%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#ffee00"/>
     </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ff4444" flood-opacity="0.6"/>
-    </filter>
+    <filter id="glow"><feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ff6600" flood-opacity="0.8"/></filter>
+    <filter id="softglow"><feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffaa00" flood-opacity="0.5"/></filter>
   </defs>
   <rect width="500" height="500" fill="url(#bg)" rx="20"/>
-  <circle cx="250" cy="200" r="120" fill="none" stroke="url(#glow)" stroke-width="3" filter="url(#shadow)"/>
-  <text x="250" y="180" text-anchor="middle" font-family="Georgia,serif" font-size="60" fill="#ff4444" filter="url(#shadow)">F</text>
-  <text x="250" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#ff8800">FOUNDER</text>
-  <text x="250" y="270" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#cc6666">TOKEN</text>
-  <text x="250" y="340" text-anchor="middle" font-family="monospace" font-size="11" fill="#666">SOULBOUND · XRP LEDGER</text>
-  <text x="250" y="365" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">#0001</text>
-  <rect x="175" y="390" width="150" height="36" rx="18" fill="#8b0000" opacity="0.8"/>
-  <text x="250" y="414" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#fff">$49.99 USD</text>
+  <rect x="10" y="10" width="480" height="480" fill="none" stroke="#ff6600" stroke-width="1" rx="15" opacity="0.2"/>
+  <circle cx="250" cy="210" r="140" fill="none" stroke="#ff6600" stroke-width="1" opacity="0.15"/>
+  <!-- Phoenix / flame wings -->
+  <path d="M250 80 Q300 120 330 170 Q360 220 340 260 Q320 300 280 280 Q300 250 290 220 Q280 190 250 210 Q250 190 240 170 Q230 150 220 140 Q250 120 250 80Z" fill="url(#flame)" opacity="0.9" filter="url(#glow)"/>
+  <path d="M250 80 Q200 120 170 170 Q140 220 160 260 Q180 300 220 280 Q200 250 210 220 Q220 190 250 210 Q250 190 260 170 Q270 150 280 140 Q250 120 250 80Z" fill="url(#flame)" opacity="0.9" filter="url(#glow)"/>
+  <!-- Crown -->
+  <path d="M200 90 L220 60 L240 85 L250 55 L260 85 L280 60 L300 90 L310 120 L190 120 Z" fill="url(#gold)" filter="url(#softglow)"/>
+  <circle cx="220" cy="90" r="5" fill="#fff" opacity="0.8"/>
+  <circle cx="250" cy="90" r="6" fill="#fff" opacity="0.9"/>
+  <circle cx="280" cy="90" r="5" fill="#fff" opacity="0.8"/>
+  <!-- Center emblem -->
+  <circle cx="250" cy="210" r="50" fill="none" stroke="url(#gold)" stroke-width="3" filter="url(#glow)"/>
+  <text x="250" y="220" text-anchor="middle" font-family="Georgia,serif" font-size="48" font-weight="bold" fill="url(#gold)" filter="url(#glow)">F</text>
+  <text x="250" y="290" text-anchor="middle" font-family="Georgia,serif" font-size="22" letter-spacing="4" fill="url(#gold)">FOUNDER</text>
+  <text x="250" y="315" text-anchor="middle" font-family="Georgia,serif" font-size="14" letter-spacing="3" fill="#cc8800">TOKEN</text>
+  <rect x="120" y="380" width="260" height="40" rx="20" fill="none" stroke="#ff6600" stroke-width="1" opacity="0.4"/>
+  <text x="250" y="406" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ff6600">$49.99 USD</text>
+  <text x="250" y="445" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">SOULBOUND XRP LEDGER</text>
+  <text x="250" y="465" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">UNIQUE LIMITED</text>
 </svg>

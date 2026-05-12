@@ -1,20 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a14"/>
-      <stop offset="100%" stop-color="#0d0a0a"/>
-    </linearGradient>
-    <filter id="g">
-      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ffaa00" flood-opacity="0.5"/>
-    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#140a0a"/><stop offset="100%" stop-color="#0a0a0f"/></linearGradient>
+    <linearGradient id="tier_grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffd700"/><stop offset="100%" stop-color="#ff6600"/></linearGradient>
+    <filter id="g"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ffd700" flood-opacity="0.6"/></filter>
   </defs>
   <rect width="500" height="500" fill="url(#bg)" rx="20"/>
-  <rect x="20" y="20" width="460" height="460" fill="none" stroke="#ff0" stroke-width="2" rx="15" opacity="0.5"/>
-  <circle cx="250" cy="200" r="80" fill="none" stroke="#ff0" stroke-width="2" filter="url(#g)"/>
-  <text x="250" y="192" text-anchor="middle" font-family="monospace" font-size="14" fill="#ff0" filter="url(#g)">CABAL</text>
-  <text x="250" y="220" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Cabal Operative</text>
-  <text x="250" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ff0" filter="url(#g)">MYTHIC</text>
-  <text x="250" y="340" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">RARITY MYTHIC</text>
-  <line x1="150" y1="370" x2="350" y2="370" stroke="#ff0" stroke-width="1" opacity="0.3"/>
-  <text x="250" y="400" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">FALL OF THE CABAL</text>
+  <rect x="15" y="15" width="470" height="470" fill="none" stroke="#ffaa00" stroke-width="1.5" rx="15" opacity="0.3"/>
+  <path d="M220 95 Q250 70 280 95 L285 150 Q250 160 215 150Z" fill="#5a2a00"/><ellipse cx="250" cy="240" rx="55" ry="65" fill="#4a1a00"/><circle cx="250" cy="122" r="20" fill="#3a0a00"/><circle cx="242" cy="118" r="4" fill="#ffd700" opacity="0.9"/><circle cx="258" cy="118" r="4" fill="#ffd700" opacity="0.9"/><path d="M225 108 L240 95 L250 102 L260 95 L275 108 L268 118 L232 118Z" fill="url(#tier_grad)" filter="url(#g)"/>
+  <text x="250" y="340" text-anchor="middle" font-family="monospace" font-size="9" fill="#ffaa00">CABAL OPERATIVE</text>
+  <text x="250" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffd700">MYTHIC</text>
 </svg>
